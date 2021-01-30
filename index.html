@@ -16,104 +16,119 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+    <section id="booking-area">
+        <!--Header and Menu Section-->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Booking Section-->
+        <main id="booking-area" class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" placeholder="Dhaka, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input id="departure-date" class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
                         <input class="inp-style" type="date" name="">
-                </div>
-                <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="firstClass-inputValue" class="inp-style inp-width" type="number" value="0">
-                </div>
-                <!-- first class plus minus button -->
-                <div class="plus-minus-btn">
-                    <button id="firstClass-plusBtn"><i class="fas fa-plus"></i></button>
-                    <button id="firstClass-minusBtn"><i class="fas fa-minus"></i></button>
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="economicClass-inputValue" class="inp-style inp-width" type="number" value="0">
-                </div>
-                <!-- Economic class plus minus button -->
-                <div class="plus-minus-btn">
-                    <button id="economicClass-plusBtn"><i class="fas fa-plus"></i></button>
-                    <button id="economicClass-minusBtn"><i class="fas fa-minus"></i></button>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
                     </div>
-                    <div class="right">
-                        <p>$ <span id="subtotal">0</span></p>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClass-inputValue" class="inp-style inp-width" type="number" value="0">
+                    </div>
+                    <!-- first class plus minus button -->
+                    <div class="plus-minus-btn">
+                        <button id="firstClass-plusBtn"><i class="fas fa-plus"></i></button>
+                        <button id="firstClass-minusBtn"><i class="fas fa-minus"></i></button>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economicClass-inputValue" class="inp-style inp-width" type="number" value="0">
                     </div>
-                    <div class="right">
-                        <p>$ <span>0</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p>$ <span>0</span></p>
+                    <!-- Economic class plus minus button -->
+                    <div class="plus-minus-btn">
+                        <button id="economicClass-plusBtn"><i class="fas fa-plus"></i></button>
+                        <button id="economicClass-minusBtn"><i class="fas fa-minus"></i></button>
                     </div>
                 </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="subtotal">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="vat">0</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$ <span id="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="bookNow" class="btn-style" type="submit">Book Now</button>
             </div>
-            <button class="btn-style">Book Now</button>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis deserunt nobise
+                    voluptatibus quam</p>
+            </div>
+
+            <!-- Js Files -->
+            <script src="javaScript.js"></script>
+            <!--Thank You-->
+        </main>
+    </section>
+    <section id="confirmation-area">
+        <div class="confirm">
+            <h1>Thank you for choosing us</h1>
+            <p>Following instruction may help you.</p>
+            <hr>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum laudantium eveniet quasi
+                delectus rerum qui fugiat reprehenderit libero minima, a harum placeat labore culpa voluptatibus
+                provident quis rem magni molestiae inventore. Perspiciatis impedit magnam nam optio commodi excepturi
+                ipsum libero, nulla deserunt assumenda voluptatibus odio ducimus enim doloremque eius!</h3>
+            <button id="bookNow" class="btn-style">Yes,I get it</button>
+
         </div>
-
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
-        </section>
-        <!-- Js Files -->
-        <script src="javaScript.js"></script>
-        <!--Thank You-->
+    </section>
 </body>
 
 </html>
